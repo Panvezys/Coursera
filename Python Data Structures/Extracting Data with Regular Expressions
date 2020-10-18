@@ -1,9 +1,8 @@
 import re
 handle=open('actual_data.txt')
-b=0
+sum=0
 for line in handle:
-    f=re.findall('[0-9]+', line)
-    for i in f:
-        a=int(i)
-        b=b+a
-print(b)
+    number=re.findall('[0-9]+', line)
+    for i in number:
+        sum=sum+int(i)
+print(sum)
