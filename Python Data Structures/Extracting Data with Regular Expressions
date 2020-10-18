@@ -1,0 +1,12 @@
+import re
+handle=open('actual_data.txt')
+lst=list()
+b=0
+for line in handle:
+    if re.findall('[0-9]+', line):
+        f=re.findall('[0-9]+', line)
+        for i in f:
+            a=int(i)
+            b=b+a
+    continue
+print(b)
